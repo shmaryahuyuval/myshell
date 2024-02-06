@@ -16,7 +16,7 @@
 
 // prepare and finalize calls for initialization and destruction of anything required
 
-void sigint_handler(int signo);
+void handle_SIGCHLD(int signum);
 int prepare(void);
 int finalize(void);
 int process_arglist(int count, char** arglist);
